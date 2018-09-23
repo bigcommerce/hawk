@@ -1,6 +1,6 @@
 {
-    "name": "dflydev/hawk",
-    "description": "Hawk",
+    "name": "bigcommerce-labs/hawk",
+    "description": "Hawk - maintenance fork from dflydev/hawk",
     "keywords": ["hawk", "authentication", "bewit"],
     "license": "MIT",
     "authors": [
