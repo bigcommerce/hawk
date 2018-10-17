@@ -1,26 +1,14 @@
 language: php
-
 php:
   - 7.1
   - 7.2
-
 cache:
   directories:
     - vendor
-    - $HOME/.composer/cache
-
-before_script:
-  - composer self-update
-  - composer install --dev --prefer-source
-
+before_install:
+  - composer validate
+install:
+  - composer install -o --prefer-source --no-interaction
 script:
-  - ./vendor/bin/phpunit --coverage-clover=coverage.clover
-  - ./vendor/bin/phpcs --standard=PSR2 src
-
-after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
-  - CODECLIMATE_REPO_TOKEN=573d86e6238ed49e0ec0628addea7fb3ac46d9649b6b3a32a994a81eaf05d2e6 ./vendor/bin/test-reporter --coverage-report=coverage.clover
-
-notifications:
-  email: true
+  - vendor/bin/phpcs --standard=PSR2 src
+  - vendor/bin/phpunit
