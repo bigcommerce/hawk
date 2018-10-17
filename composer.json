@@ -15,6 +15,9 @@
             "homepage": "http://beausimensen.com"
         }
     ],
+    "replace": {
+        "dflydev/hawk": "*"
+    },
     "autoload": {
         "psr-0": {
             "Dflydev\\Hawk": "src"
