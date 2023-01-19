@@ -2,7 +2,9 @@
 
 namespace Dflydev\Hawk\Crypto;
 
-class ArtifactsTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class ArtifactsTest extends TestCase
 {
     /** @test */
     public function shouldReturnCorrectValuesForAllFields()

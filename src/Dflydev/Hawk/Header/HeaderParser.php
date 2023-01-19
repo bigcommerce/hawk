@@ -6,7 +6,7 @@ class HeaderParser
 {
     public static function parseFieldValue($fieldValue, array $requiredKeys = null)
     {
-        if (0 !== strpos($fieldValue, 'Hawk')) {
+        if (!str_starts_with($fieldValue, 'Hawk')) {
             throw new NotHawkAuthorizationException;
         }
 

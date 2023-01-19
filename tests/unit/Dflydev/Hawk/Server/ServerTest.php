@@ -3,11 +3,10 @@
 namespace Dflydev\Hawk\Server;
 
 use Dflydev\Hawk\Credentials\Credentials;
-use Dflydev\Hawk\Nonce\NonceProviderInterface;
 use Dflydev\Hawk\Time\ConstantTimeProvider;
-use Dflydev\Hawk\Time\TimeProviderInterface;
+use PHPUnit\Framework\TestCase;
 
-class ServerTest extends \PHPUnit_Framework_TestCase
+class ServerTest extends TestCase
 {
     /** @test */
     public function shouldAuthenticateBewit()

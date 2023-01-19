@@ -3,10 +3,9 @@
 namespace Dflydev\Hawk\Client;
 
 use Dflydev\Hawk\Credentials\Credentials;
-use Dflydev\Hawk\Nonce\NonceProviderInterface;
-use Dflydev\Hawk\Time\TimeProviderInterface;
+use PHPUnit\Framework\TestCase;
 
-class ClientTest extends \PHPUnit_Framework_TestCase
+class ClientTest extends TestCase
 {
     /**
      * @test

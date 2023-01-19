@@ -1,5 +1,6 @@
 {
-    "name": "bigcommerce-labs/hawk",
+    "name": "bigcommerce/hawk",
+    "homepage": "https://github.com/bigcommerce/hawk",
     "description": "Hawk - maintenance fork from dflydev/hawk",
     "keywords": ["hawk", "authentication", "bewit"],
     "license": "MIT",
@@ -27,9 +28,8 @@
         "paragonie/random-lib": "^2.0"
     },
     "require-dev": {
-        "codeclimate/php-test-reporter": "~0.1@dev",
-        "phpunit/phpunit": "~4.5",
-        "squizlabs/php_codesniffer": "~2.3"
+        "phpunit/phpunit": "~9.5",
+        "squizlabs/php_codesniffer": "~3.7"
     },
     "extra": {
         "branch-alias": {
