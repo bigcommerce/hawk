@@ -4,8 +4,9 @@ namespace Dflydev\Hawk\Crypto;
 
 use Dflydev\Hawk\Credentials\Credentials;
 use Dflydev\Hawk\Credentials\CredentialsInterface;
+use PHPUnit\Framework\TestCase;
 
-class CryptoTest extends \PHPUnit_Framework_TestCase
+class CryptoTest extends TestCase
 {
     /**
      * @test
