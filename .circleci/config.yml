@@ -11,7 +11,7 @@ workflows:
       - php/phpunit-tests:
           matrix:
             parameters:
-              php-version: [ "8.0", "8.1", "8.2" ]
+              php-version: [ "8.0", "8.1", "8.2", "8.3" ]
       - php/composer-github:
           filters:
             tags:
