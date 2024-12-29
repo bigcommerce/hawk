@@ -8,7 +8,7 @@ class Header
     private $fieldValue;
     private $attributes;
 
-    public function __construct($fieldName, $fieldValue, array $attributes = null)
+    public function __construct($fieldName, $fieldValue, ?array $attributes = null)
     {
         $this->fieldName = $fieldName;
         $this->fieldValue = $fieldValue;
@@ -25,7 +25,7 @@ class Header
         return $this->fieldValue;
     }
 
-    public function attributes(array $keys = null)
+    public function attributes(?array $keys = null)
     {
         if (null === $keys) {
             return $this->attributes;
