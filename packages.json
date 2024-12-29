@@ -1,0 +1,12 @@
+{
+  "packages": [],
+  "includes": {
+    "include/all$1eb6ffa8c2c37418b477e0dea37e3adc77ac12de.json": {
+      "sha1": "1eb6ffa8c2c37418b477e0dea37e3adc77ac12de"
+    }
+  },
+  "metadata-url": "/bigcommerce/hawk/composer/p2/%package%.json",
+  "available-packages": [
+    "bigcommerce/hawk"
+  ]
+}
