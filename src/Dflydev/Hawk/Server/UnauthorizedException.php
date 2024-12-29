@@ -9,7 +9,7 @@ class UnauthorizedException extends \Exception
     private $attributes;
     private $header;
 
-    public function __construct($message = null, array $attributes = null)
+    public function __construct($message = null, ?array $attributes = null)
     {
         parent::__construct($message);
         $this->attributes = $attributes ?: array();
