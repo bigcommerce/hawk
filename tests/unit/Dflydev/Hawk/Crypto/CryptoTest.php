@@ -4,15 +4,13 @@ namespace Dflydev\Hawk\Crypto;
 
 use Dflydev\Hawk\Credentials\Credentials;
 use Dflydev\Hawk\Credentials\CredentialsInterface;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class CryptoTest extends TestCase
 {
-    /**
-     * @test
-     * @dataProvider payloadDataProvider
-     */
-    public function shouldCalculatePayloadHash(
+    #[DataProvider('payloadDataProvider')]
+    public function testShouldCalculatePayloadHash(
         $expectedHash,
         $payload,
         $algorithm,
@@ -29,7 +27,7 @@ class CryptoTest extends TestCase
         $this->assertEquals($expectedHash, $calculatedHash);
     }
 
-    public function payloadDataProvider()
+    public static function payloadDataProvider()
     {
         return array(
             array(
@@ -41,11 +39,8 @@ class CryptoTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     * @dataProvider macDataProvider
-     */
-    public function shouldCalculateMac(
+    #[DataProvider('macDataProvider')]
+    public function testShouldCalculateMac(
         $expectedMac,
         $type,
         CredentialsInterface $credentials,
@@ -58,7 +53,7 @@ class CryptoTest extends TestCase
         $this->assertEquals($expectedMac, $calculatedMac);
     }
 
-    public function macDataProvider()
+    public static function macDataProvider()
     {
         $tentTestVectorsCredentials = new Credentials(
             'HX9QcbD-r3ItFEnRcAuOSg',
@@ -191,11 +186,8 @@ class CryptoTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     * @dataProvider tsMacDataProvider
-     */
-    public function shouldCalculateTsMac(
+    #[DataProvider('tsMacDataProvider')]
+    public function testShouldCalculateTsMac(
         $expectedTsMac,
         $ts,
         CredentialsInterface $credentials
@@ -207,7 +199,7 @@ class CryptoTest extends TestCase
         $this->assertEquals($expectedTsMac, $calculatedTsMac);
     }
 
-    public function tsMacDataProvider()
+    public static function tsMacDataProvider()
     {
         $tentTestVectorsCredentials = new Credentials(
             'HX9QcbD-r3ItFEnRcAuOSg',

@@ -9,9 +9,12 @@ workflows:
   all-tests:
     jobs:
       - php/phpunit-tests:
+          e:
+            name: php/php
+            php-version: <<matrix.php-version>>
           matrix:
             parameters:
-              php-version: [ "8.0", "8.1", "8.2", "8.3", "8.4" ]
+              php-version: [ "8.2", "8.3", "8.4" ]
       - php/composer-github:
           filters:
             tags:

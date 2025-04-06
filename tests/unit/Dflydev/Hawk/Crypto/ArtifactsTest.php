@@ -6,8 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class ArtifactsTest extends TestCase
 {
-    /** @test */
-    public function shouldReturnCorrectValuesForAllFields()
+    public function testShouldReturnCorrectValuesForAllFields()
     {
         $artifacts = new Artifacts(
             'testmethod',

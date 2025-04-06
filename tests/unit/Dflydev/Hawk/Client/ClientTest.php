@@ -7,10 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class ClientTest extends TestCase
 {
-    /**
-     * @test
-     */
-    public function shouldCreateBewit()
+    public function testShouldCreateBewit()
     {
         $client = ClientBuilder::create()->build();
 
