@@ -8,8 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class ServerTest extends TestCase
 {
-    /** @test */
-    public function shouldAuthenticateBewit()
+    public function testShouldAuthenticateBewit()
     {
         $credentialsProvider = function ($id) {
             return new Credentials(
