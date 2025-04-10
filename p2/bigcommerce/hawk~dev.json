@@ -1,0 +1,69 @@
+{
+    "packages": {
+        "bigcommerce/hawk": [
+            {
+                "name": "bigcommerce/hawk",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bigcommerce/hawk.git",
+                    "reference": "5fee8eb2dc7f9b979deccadd58dc7f13d3843bec"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/bigcommerce/hawk/zipball/5fee8eb2dc7f9b979deccadd58dc7f13d3843bec",
+                    "reference": "5fee8eb2dc7f9b979deccadd58dc7f13d3843bec",
+                    "shasum": ""
+                },
+                "require": {
+                    "paragonie/random-lib": "^2.0"
+                },
+                "replace": {
+                    "dflydev/hawk": "*"
+                },
+                "require-dev": {
+                    "phpunit/phpunit": "~11.5",
+                    "squizlabs/php_codesniffer": "~3.12"
+                },
+                "time": "2025-04-10T05:23:32+00:00",
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0.x-dev"
+                    }
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Dflydev\\Hawk": "src"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dragonfly Development Inc.",
+                        "email": "info@dflydev.com",
+                        "homepage": "http://dflydev.com"
+                    },
+                    {
+                        "name": "Beau Simensen",
+                        "email": "beau@dflydev.com",
+                        "homepage": "http://beausimensen.com"
+                    }
+                ],
+                "description": "Hawk - maintenance fork from dflydev/hawk",
+                "homepage": "https://github.com/bigcommerce/hawk",
+                "keywords": [
+                    "authentication",
+                    "bewit",
+                    "hawk"
+                ],
+                "support": {
+                    "source": "https://github.com/bigcommerce/hawk/tree/master"
+                }
+            }
+        ]
+    }
+}
